@@ -1,0 +1,40 @@
+.BackgroundPane1{
+    -fx-background-color: #1a1d24;
+    -fx-background-radius: 12;
+}
+.backgroundpnPane2{
+    -fx-background-color: #14171e;
+    -fx-background-radius: 12;
+}
+.backgroundpnPane3{
+    -fx-background-color: #010101;
+    -fx-background-radius: 9;
+    
+}
+.backgroundAnchorPane{
+    -fx-background-color: transparent;
+    -fx-background-radius: 12;
+}
+.ButtonsStyle{
+    -fx-background-color: transparent;
+}
+.buttonEraser{
+    -fx-background-color: transparent;
+    -fx-background-image: url('../iCons/Eraser5.png');
+}
+.buttonEquals{
+    -fx-background-color: #08a350;
+    -fx-background-radius: 12;
+}
+.btnSintaxError{
+    -fx-background-color: transparent;
+}
+.txtPane{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.txtPaneResult{
+    -fx-background-color:transparent;
+    -fx-text-fill:gray;
+
+}

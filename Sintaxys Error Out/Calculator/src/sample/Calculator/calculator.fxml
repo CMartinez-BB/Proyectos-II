@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="287.0" styleClass="backgroundAnchorPane" stylesheets="@../Styles/Stylesheets.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Calculator.Calculator">
+   <children>
+      <Pane fx:id="pnPane1" prefHeight="134.0" prefWidth="287.0" styleClass="backgroundpnPane2" stylesheets="@../Styles/Stylesheets.css">
+         <children>
+            <Button fx:id="btnSintax" layoutX="7.0" layoutY="71.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="47.0" styleClass="btnSintaxError" stylesheets="@../Styles/Stylesheets.css" text="=" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Label fx:id="txtTitulo" layoutX="14.0" layoutY="6.0" text="Calculadora beta" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtopera" alignment="TOP_RIGHT" editable="false" layoutX="21.0" layoutY="19.0" prefHeight="22.0" prefWidth="251.0" promptText="Ingrese Los números" styleClass="txtPane" stylesheets="@../Styles/Stylesheets.css">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtresult" alignment="TOP_RIGHT" editable="false" layoutX="75.0" layoutY="66.0" prefHeight="51.0" prefWidth="203.0" styleClass="txtPaneResult" stylesheets="@../Styles/Stylesheets.css">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </TextField>
+         </children></Pane>
+      <Pane fx:id="pnPane2" layoutY="126.0" prefHeight="381.0" prefWidth="287.0" styleClass="BackgroundPane1" stylesheets="@../Styles/Stylesheets.css">
+         <children>
+            <Pane fx:id="pnPane3" layoutX="14.0" layoutY="25.0" prefHeight="43.0" prefWidth="194.0" styleClass="backgroundpnPane3" stylesheets="@../Styles/Stylesheets.css">
+               <children>
+                  <Button fx:id="btnAC" layoutY="2.0" mnemonicParsing="false" onAction="#btnAC" prefHeight="37.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="AC" textFill="WHITE" />
+                  <Button fx:id="btnEraser" layoutX="64.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnEraser" prefHeight="37.0" prefWidth="57.0" styleClass="buttonEraser" stylesheets="@../Styles/Stylesheets.css" textFill="WHITE" />
+                  <Button fx:id="btnPorcentaje" layoutX="126.0" layoutY="3.0" mnemonicParsing="false" onAction="#btnPorcentaje" prefHeight="37.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="\%" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="pnPane4" layoutX="218.0" layoutY="25.0" prefHeight="282.0" prefWidth="46.0" styleClass="backgroundpnPane3" stylesheets="@../Styles/Stylesheets.css">
+               <children>
+                  <Button fx:id="btnDivision" layoutX="-5.0" mnemonicParsing="false" onAction="#btnDivision" prefHeight="51.0" prefWidth="57.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="÷" textFill="#0aa553">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnMulti" layoutX="-5.0" layoutY="74.0" mnemonicParsing="false" onAction="#btnMulti" prefHeight="37.0" prefWidth="57.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="X" textFill="#0aa553">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnResta" layoutX="-5.0" layoutY="134.0" mnemonicParsing="false" onAction="#btnResta" prefHeight="37.0" prefWidth="57.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="-" textFill="#0aa553">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSuma" layoutX="-5.0" layoutY="224.0" mnemonicParsing="false" onAction="#btnSuma" prefHeight="37.0" prefWidth="57.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="+" textFill="#0aa553">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Button fx:id="btn7" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onAction="#btn7" prefHeight="60.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="7" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn4" layoutX="14.0" layoutY="157.0" mnemonicParsing="false" onAction="#btn4" prefHeight="60.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="4" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn1" layoutX="14.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn1" prefHeight="60.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="1" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn8" layoutX="79.0" layoutY="81.0" mnemonicParsing="false" onAction="#btn8" prefHeight="60.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="8" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn9" layoutX="144.0" layoutY="81.0" mnemonicParsing="false" onAction="#btn9" prefHeight="60.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="9" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn5" layoutX="79.0" layoutY="157.0" mnemonicParsing="false" onAction="#btn5" prefHeight="60.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="5" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn6" layoutX="144.0" layoutY="157.0" mnemonicParsing="false" onAction="#btn6" prefHeight="60.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="6" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn2" layoutX="79.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn2" prefHeight="60.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="2" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn3" layoutX="144.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn3" prefHeight="60.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="3" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDecimal" layoutX="14.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnDecimal" prefHeight="60.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="." textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn0" layoutX="79.0" layoutY="305.0" mnemonicParsing="false" onAction="#btn0" prefHeight="60.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="0" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMasMenos" layoutX="144.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnMasMenos" prefHeight="60.0" prefWidth="64.0" styleClass="ButtonsStyle" stylesheets="@../Styles/Stylesheets.css" text="+/-" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEquals" layoutX="218.0" layoutY="313.0" mnemonicParsing="false" onAction="#btnEquals" prefHeight="43.0" prefWidth="46.0" styleClass="buttonEquals" stylesheets="@../Styles/Stylesheets.css" text="=" textFill="#f5f4f4" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
